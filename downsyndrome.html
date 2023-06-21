@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>down syndrome</title>
+    <link rel="stylesheet" href="AI.css" />
+    <style>
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="forms-container">
+            <div class="signin-signup">
+                <h2 class="title1">upload the  XRAY</h2>
+                <div class="container3">
+                <input type="file" class="upload-box"/>
+            </div>
+            <div class="button ">
+                <div class="text-icon">
+                  <i class="bx bx-cloud-upload"></i>
+                  <span class="text">Upload File</span>
+                </div>
+              </div>
+
+
+        </div>
+        
+        <div class="panels-container">
+            <div class="panel left-panel">
+              <div class="content">
+                <h3>what is down syndrome?</h3>
+                <p>
+                    Down syndrome is a condition in which a person has an extra chromosome. 
+                    Chromosomes are small “packages” of genes in the body. 
+                    They determine how a baby’s body forms and functions as it grows during pregnancy and after birth. 
+                    Typically, a baby is born with 46 chromosomes
+              </div>
+              <img src="C:\Users\20109\Desktop\fcii\downsyndrome.png"class="image" alt="" />
+             
+            </div>
+        </div>
+
+    </div>
+    <script>
+        const button = document.querySelector(".button"),
+        text = document.querySelector(".text");
+    
+        button.addEventListener("click", ()=>{
+          button.classList.add("progress");
+          text.innerText = "Uploading...";
+    
+          setTimeout(()=>{
+           button.classList.remove("progress"); //remove progress after 6s
+           text.innerText = "Uploaded";
+          },6000); //1000ms = 1s (6000 = 6s)
+    
+        });
+      </script>
+    
+
+
+</body>

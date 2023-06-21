@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>    
+    
+    <link rel="stylesheet" href="ai.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrapper">
+        
+        <div class="gallery">
+            <div class="video-container">
+                <a href="#" class="gallery__link">
+                   <video src="C:\Users\20109\Desktop\fcii\breast event.mp4" class="video"></video>
+                
+                </a>
+            </div>
+            <div class="gallery__item gallery__item--2">
+                <a href="breastREGISTR.html" class="gallery__link">
+                    <img src="C:\Users\20109\Desktop\fcii\ribbon.jpg" class="gallery__image" />
+                    <div class="gallery__overlay">
+                        <span> للفحص المبكر عن سرطان الثدي اضغط هنا </span>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item gallery__item--3">
+                <a href="#" class="gallery__link">
+                    <img src="C:\Users\20109\Desktop\fcii\announcement.png"class="gallery__image" />
+                    <div class="gallery__overlay">
+                        <span>   الحمالات القادمة   </span>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item gallery__item--4">
+                <a href="pregnancy.html" class="gallery__link">
+                    <img src="C:\Users\20109\Desktop\fcii\health-care-pregnant-women-logo-vector-34044367.jpg"class="gallery__image" />
+                    <div class="gallery__overlay">
+                        <span>للاطمئنان علي حالة طفلك اضغط هنا</span>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item gallery__item--5">
+                <a href="diabetes.html" class="gallery__link">
+                    <img src= "C:\Users\20109\Desktop\fcii\shutterstock_69620212.jpg"class="gallery__image" />
+                    <div class="gallery__overlay">
+                        <span>لفحص المرض السكري</span>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item gallery__item--6">
+                <a href="volunteerREGISTER.html" class="gallery__link">
+                    <img src="C:\Users\20109\Desktop\fcii\Volunteer-Needs-Button_REVISED-300x206.png" class="gallery__image" />
+                    <div class="gallery__overlay">
+                        <span>اذا اردت ان تشارك في حملات التوعية اضغط هنا</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script> 
+    var video = document.querySelectorAll('video')
+    video.forEach(play => play.addEventListener('click' ,()=> {
+        play.classList.toggle('active');
+        if (play.paused){
+            play.play();
+        }
+        else{
+         play.pause();
+         play.currentTime= 0;
+        
+        }
+    }));
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding:2rem 7%;
+  border-bottom: .1rem solid rgba(0,0,0,.1);
+  position: relative;
+  z-index: 1000;
+  text-decoration: none;
+  font-size: 62.5%;
+}
+
+header .logo{
+  font-size: 62.5%;
+  color:var(--violet);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header .logo span{
+  font-size: 62.5%;
+  color:var(--pink);
+  text-decoration: none;
+}
+
+header .navbar a{
+  font-size: 62.5%;
+  margin-left: 2rem;
+  color:#333;
+  text-decoration: none;
+}
+
+header .navbar a:hover{
+  color:var(--pink);
+  text-decoration: none;
+}
+
+#menu{
+  font-size: 2.5rem;
+  padding:.5rem 1rem;
+  border-radius: .3rem;
+  border:.1rem solid rgba(0,0,0,.2);
+  cursor: pointer;
+  display: none;
+}
